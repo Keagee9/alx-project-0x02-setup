@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/layout/Header';
+import Card from '../components/common/Card'; // This line imports the Card component
 
 const HomePage: React.FC = () => {
   return (
@@ -13,10 +14,30 @@ const HomePage: React.FC = () => {
 
       <Header />
 
-      <main className="flex-grow flex items-center justify-center bg-green-100">
-        <h1 className="text-5xl font-bold text-green-800">
+      <main className="flex-grow flex flex-col items-center justify-center bg-green-100 p-8">
+        <h1 className="text-5xl font-bold text-green-800 mb-10">
           Welcome to the Home Page!
         </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* These lines use the Card component */}
+          <Card
+            title="Our Mission"
+            content="To provide high-quality education and foster innovation among our students."
+          />
+          <Card
+            title="Our Vision"
+            content="To be a leading institution in technology and professional development."
+          />
+          <Card
+            title="Programs Offered"
+            content="Explore our diverse range of programs in software engineering, data science, and more."
+          />
+          <Card
+            title="Student Success"
+            content="We are dedicated to the success of our students, offering support and resources."
+          />
+        </div>
       </main>
 
       <footer className="bg-gray-800 text-white p-4 text-center">
