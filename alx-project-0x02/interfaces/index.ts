@@ -19,6 +19,28 @@ export interface PostCardProps {
   excerpt: string;
 }
 
+export interface UserCardProps {
+  id: number;
+  name: string;
+  email: string;
+  website: string;
+}
+
+export interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+}
+
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  website: string;
+  address: Address;
+}
+
 export interface WelcomeProps {
   message: string;
 }
