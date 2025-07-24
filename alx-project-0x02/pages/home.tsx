@@ -2,8 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
-import Card from '../components/common/Card'; // Import the new Card component
-import { CardProps } from '@/components/common/Card'; // Import the CardProps interface
+import Card from '@/components/common/Card'; // Import the new Card component
 
 const HomePage: React.FC = () => {
   return (
