@@ -1,6 +1,9 @@
 // interfaces/index.ts
-export interface WelcomeProps {
-  message: string;
+
+export interface ButtonProps {
+  label: string;
+  size: 'small' | 'medium' | 'large';
+  shape: string;
 }
 
 export interface CardProps {
@@ -8,4 +11,14 @@ export interface CardProps {
   content: string;
 }
 
-export interface ButtonProps", "size", "shape", "small", "rounded-sm", "rounded-md", "medium", "large
+export interface PostCardProps {
+  userId: number;
+  title:string;
+  author: string;
+  date: string;
+  excerpt: string;
+}
+
+export interface WelcomeProps {
+  message: string;
+}
