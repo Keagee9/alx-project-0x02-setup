@@ -1,7 +1,7 @@
 // components/layout/Header.tsx
 import React from 'react';
 import Link from 'next/link'; // Import Link from next/link
-
+import link from "/posts";
 const Header: React.FC = () => {
   return (
     <header className="bg-blue-600 text-white p-4 shadow-md">

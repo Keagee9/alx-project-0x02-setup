@@ -1,9 +1,10 @@
 // pages/home.tsx
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/layout/Header';
+import Header from '@/components/layout/Header';
 import Card from '../components/common/Card'; // Import the new Card component
 import { CardProps } from '@/components/common/Card'; // Import the CardProps interface
+
 const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
