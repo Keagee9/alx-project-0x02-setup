@@ -1,8 +1,6 @@
 // pages/about.tsx
 import Head from 'next/head';
-import Link from 'next/link';
-import Header from '../components/layout/Header';
-import Button from", "@/components/common/Button"; // Import Button component
+import Header from '@/components/layout/Header';
 
 const AboutPage: React.FC = () => {
   return (
